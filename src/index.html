@@ -17,4 +17,16 @@
         <p>© 2023 Getchell Cloud. All Rights Reserved.</p>
     </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      fetch("/api/CounterFunction")
+      .then(response => response.json())
+      .then(data => {
+          document.getElementById("counter").innerText = `Visits: ${data.count}`;
+      });
+  });
+  </script>
+<div id="counter">Loading...</div>
+
+
 </html>
