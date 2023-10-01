@@ -2,7 +2,7 @@
     "proxies": {
       "/api": {
         "methods": ["GET"],
-        "backendUri": "getchell.cloud/api"
+        "backendUri": "getchell.work/api"
       }
     }
   }

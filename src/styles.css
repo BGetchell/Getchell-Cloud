@@ -14,7 +14,7 @@ nav ul {
   background: navy; /* changed from gray to navy */
   position: fixed;
   height: 100%;
-  width: 8%;
+  width: 15%;
   overflow: hidden;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 section {
-  margin-left: 9%;
+  margin-left: 16%;
   padding: 60px 20px;
   border-bottom: 1px solid #ddd;
   min-height: 100vh; /* ensures each section takes a full viewport height */
