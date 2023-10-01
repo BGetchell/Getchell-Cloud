@@ -1,56 +1,51 @@
+/* Existing CSS (if any) */
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f5f5f5;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  background-color: #333;
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 220px; /* Adjust width if needed */
   height: 100%;
-  overflow: auto;
+  background-color: red; /* Changing color to red */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
+nav ul li {
+  padding: 10px;
   text-align: center;
-  padding: 10px 0;
 }
 
-nav li a {
-  display: block;
-  color: white;
+nav ul li a {
+  color: white; /* Making the text color white for visibility against red */
   text-decoration: none;
-  transition: background-color 0.3s;
+  display: block;
+  transition: background 0.3s;
 }
 
-nav li a:hover {
-  background-color: #f1f1f1;
-  color: #333;
+nav ul li a:hover {
+  background-color: darkred; /* Darker shade on hover for better UI effect */
 }
 
-section {
-  margin-left: 210px;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
+/* Additional CSS for the image */
+header {
+  position: relative;
 }
 
-h1, h2 {
-  color: #003366;
+header img {
+  max-width: 100%;
+  height: auto;
 }
 
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #003366;
-  color: #ffffff;
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
