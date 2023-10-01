@@ -1,8 +1,8 @@
-# #CloudGuruChallenge: Your resume in Azure
+# #Getchell.work: Your resume in Azure
 
 Here is my solution to the [Azure Resume Challenge](https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure)
 
-View it live [here](https://www.getchell.work)
+View it live [here](https://getchell.work)
 
 ![Diagram](src/images/diagram.png)
 
@@ -28,6 +28,6 @@ The back-end is an Azure Static Web. I choose to use this vs Azure Storage/CDN b
 
 ## Cloudflare resources
 
-I use Cloudflare for SSL/Proxy. It offers SSL for all URLs in the website, as Azure Static Web Hosting does not for certain URLs.
+I use Cloudflare for SSL/Proxy. It offers SSL for all URLs in the website, as Azure Static Web Hosting does not for certain URLs. It also allows for OATH login with Microsoft 365 account authentication. I also use it for WAF rules, example Non USA customers have to complete an interactive challenge to view the website, blocks bots, DDoS prevention, and has rate limiting. 
 
 - Recommend this [guide](https://developers.cloudflare.com/support/third-party-software/others/enabling-cloudflare-ssl-on-azure-storage-static-web-hosting-applications/) as a start point.
