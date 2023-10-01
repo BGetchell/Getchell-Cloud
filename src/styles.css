@@ -1,100 +1,69 @@
-body, html {
-  font-family: Arial, sans-serif;
+/* Resetting some default browser styles */
+body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  overflow-x: hidden;
-  height: 100%;
 }
 
-header {
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+}
+
+aside#sidebar {
   background-color: navy;
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-  position: relative;
+  width: 20%;
+  min-width: 180px;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  list-style: none;
 }
 
 nav ul li {
-  display: inline;
+  padding: 15px;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  position: relative;
+  color: white;
+  display: block;
+  transition: transform 0.3s;
 }
 
 nav ul li a:hover {
-  color: red;
-}
-
-nav ul li a:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: red;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-nav ul li a:hover:before {
-  visibility: visible;
-  width: 100%;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 main {
-  padding: 2rem;
-}
-
-h1, h2 {
-  animation: fadeInDown 0.5s forwards;
-  opacity: 0;
-}
-
-@keyframes fadeInDown {
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f4f4f4;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: red;
   color: white;
   text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  padding: 10px 0;
+  box-shadow: 0px -2px 5px rgba(0,0,0,0.2);
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
+img {
+  max-width: 100%;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-      gap: 10px;
-  }
+h1, h2 {
+  margin-bottom: 20px;
+}
 
-  nav ul li a {
-      font-size: 1.2rem;
-  }
+p, li {
+  margin-bottom: 10px;
 }
