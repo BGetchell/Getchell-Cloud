@@ -1,9 +1,0 @@
-{
-    "proxies": {
-      "/api": {
-        "methods": ["GET"],
-        "backendUri": "getchell.work/src/api"
-      }
-    }
-  }
-  

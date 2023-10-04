@@ -1,6 +1,4 @@
-# #Getchell.work: Your resume in Azure
-
-Here is my solution to the [Azure Resume Challenge](https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure)
+# #Getchell.work: 
 
 View it live [here](https://getchell.work)
 
@@ -16,13 +14,13 @@ View it live [here](https://getchell.work)
 
 ## Front-end resources
 
-The front-end is a static site with HTML, CSS, and JavaScript. It's static and has a visitor counter. The visitor counter data fetched via an API call to an Azure Function.
+The front-end is a static site with HTML, CSS, and JavaScript.
 
-- I am a terrible designer, I used this [template](https://www.styleshout.com/free-templates/ceevee/) to create my site.
+- I used this [template](https://www.styleshout.com/free-templates/ceevee/) to create my site.
 
 ## Back-end resources
 
-The back-end is an Azure Static Web. I choose to use this vs Azure Storage/CDN because I haven't seen it done for this challenge, it is free, and seems this will be used way more in the future.
+The back-end is an Azure Static Web. 
 
 - I used this [guide](https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=vanilla-javascript) as a start point.
 
